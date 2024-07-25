@@ -1,6 +1,7 @@
 .page {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  opacity: .9;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
   background: black;
-  opacity: .8;
 }
