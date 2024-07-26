@@ -2,18 +2,24 @@
 @font-face{font-family:Roboto-Light;font-style:normal;font-weight:300;src:url(19a99746405e8730f34c.woff) format("woff")}@font-face{font-family:Oswald-Bold;font-style:normal;font-weight:800;src:url(8c294acde5159561e92d.woff2) format("woff2")}@font-face{font-family:OpenSans-Regular;font-style:normal;font-weight:400;src:url(d05f5eb593ca0ecea8ca.woff) format("woff")}
 .page{background:#000;color:#fff;letter-spacing:1.2px;margin:20px;opacity:.9}
 
-.content{background-position:50%;background-repeat:no-repeat;background-size:cover}
+
+
 .question__title{font-family:Oswald-Bold,sans-serif;letter-spacing:2px}
-.question__result_error{color:red}
-.question__result_right{color:green}
-.question__result{font-size:16px;min-block-size:30px;padding-block:5px}
+.question__result_error{color:red;font-family:OpenSans-Regular,sans-serif;opacity:.9;text-transform:uppercase;transition:opacity .7s ease}
+.question__result_right{color:green;font-family:OpenSans-Regular,sans-serif;opacity:.9;text-transform:uppercase;transition:opacity .7s ease}
+.result_is-hidden{opacity:0;transition:opacity .7s ease}
+.result_is-visible{opacity:.9;transition:opacity .7s ease}
+.question__result{font-size:16px;min-block-size:32px;padding-block-end:5px;padding-block-start:7px;transition:opacity .7s ease}
 .qustion__text{border-bottom:1px solid hsla(0,0%,100%,.3);font-family:OpenSans-Regular,sans-serif;font-size:22px;padding-block-end:5px}
 .question__item{border:1px solid hsla(0,0%,100%,.7);border-radius:8px;margin-block:30px;padding:10px}
-.question{border:1px solid hsla(0,0%,100%,.3);border-radius:5px;opacity:.8;padding:10px}
-.form__button_disabled{opacity:.5}
-.form__button{background:transparent;border:1px solid #fff;border-radius:5px;color:#fff;cursor:pointer;font-family:OpenSans-Regular,sans-serif;font-size:18px;letter-spacing:2px;margin-block-start:30px;max-inline-size:400px;padding-block:10px;text-transform:uppercase}.form__button:hover{opacity:.5}
+.question{border:1px solid hsla(0,0%,100%,.3);border-radius:5px;padding:10px}
+.form__button_disabled{opacity:.3}
+.form__button{background:transparent;border:1px solid #fff;border-radius:5px;color:#fff;cursor:pointer;font-family:OpenSans-Regular,sans-serif;font-size:18px;letter-spacing:2px;margin-block-start:30px;max-inline-size:400px;padding-block:10px;text-transform:uppercase;transition:opacity .8s ease}.form__button:hover{opacity:.3}
 .form{display:grid;padding-block-end:10px;padding-block-start:30px;padding-inline:10px}
 .answers__list{display:grid;gap:15px}
 .input__text{font-family:Roboto-Light,sans-serif;font-size:18px;line-height:1.3}
+
+.footer__button{padding-inline:25px}
+.footer{text-align:center}
 
 
