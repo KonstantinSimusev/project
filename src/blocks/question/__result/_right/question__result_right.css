@@ -1,4 +1,7 @@
 .question__result_right {
+  font-family: 'OpenSans-Regular', sans-serif;
+  text-transform: uppercase;
   color: green;
-  /* opacity: .8; */
+  opacity: .9;
+  transition: opacity .7s ease;
 }

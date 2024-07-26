@@ -1,4 +1,7 @@
 .question__result_error {
+  font-family: 'OpenSans-Regular', sans-serif;
+  text-transform: uppercase;
   color: red;
-  /* opacity: .8; */
+  opacity: .9;
+  transition: opacity .7s ease;
 }

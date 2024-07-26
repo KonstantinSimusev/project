@@ -1,0 +1,4 @@
+.result_is-visible {
+  opacity: .9;
+  transition: opacity .7s ease;
+}

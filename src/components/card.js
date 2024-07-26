@@ -67,9 +67,11 @@ export const createQuestion = (question, questions) => {
 
     if (userAnswers.join() === joinRandomAnswers) {
       result.classList.add('question__result_right');
+      result.classList.add('result_is-visible');
       result.textContent = 'Правильный ответ'
     } else {
       result.classList.add('question__result_error');
+      result.classList.add('result_is-visible');
       result.textContent = 'Неправильный ответ';
     }
 
@@ -85,6 +87,7 @@ export const createQuestion = (question, questions) => {
       result.textContent = '';
       result.classList.remove('question__result_error');
       result.classList.remove('question__result_right');
+      result.classList.remove('result_is-visible');
     }, 3000);
   });
 

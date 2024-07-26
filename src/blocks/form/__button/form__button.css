@@ -13,8 +13,9 @@
   border-radius: 5px;
   border: 1px solid white;
   cursor: pointer;
+  transition: opacity .8s ease;
 }
 
 .form__button:hover {
-  opacity: .5;
+  opacity: .3;
 }

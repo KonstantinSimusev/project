@@ -1,8 +1,12 @@
 @import url('./_error/question__result_error.css');
 @import url('./_right/question__result_right.css');
+@import url('./_is-hidden/result_is-hidden.css');
+@import url('./_is-visible/result_is-visible.css');
 
 .question__result {
-  padding-block: 5px;
-  min-block-size: 30px;
+  padding-block-start: 7px;
+  padding-block-end: 5px;
+  min-block-size: 32px;
   font-size: 16px;
+  transition: opacity .7s ease;
 }

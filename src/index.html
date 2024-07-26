@@ -12,12 +12,14 @@
         <ul class="questions__list"></ul>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <button type="button" class="footer__button form__button">Показать вопросы ещё...</button>
+    </footer>
 
     <template id="question-template">
       <li class="question__item">
         <h1 class="question__title"></h1>
-        <p class="question__result"></p>
+        <p class="question__result result_is-hidden"></p>
         <p class="qustion__text"></p>
         <form class="form form__type_answer">
           <ul class="answers__list"></ul>
