@@ -78,13 +78,15 @@ export const createQuestion = (question, questions) => {
     });
 
     userAnswers = [];
+    button.classList.add('form__button_disabled');
     button.disabled = true;
 
     setTimeout(() => {
       result.textContent = '';
+      result.classList.remove('question__result_error');
+      result.classList.remove('question__result_right');
     }, 3000);
   });
-
 
   return card;
 };

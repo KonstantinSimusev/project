@@ -1,3 +1,4 @@
-/* .question__title {
-  margin-block-start: 10px;
-} */
+.question__title {
+  letter-spacing: 2px;
+  font-family: 'Oswald-Bold', sans-serif;
+}

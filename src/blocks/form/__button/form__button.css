@@ -1,6 +1,10 @@
 @import url('./_disabled/form__button_disabled.css');
 
 .form__button {
+  font-family: 'OpenSans-Regular', sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+  max-inline-size: 400px;
   color: white;
   margin-block-start: 30px;
   background: transparent;
