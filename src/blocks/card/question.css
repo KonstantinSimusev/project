@@ -1,3 +1,5 @@
+@import url('./__title/qustion__title.css');
+
 .question {
   padding: 10px;
   border: 1px solid rgb(255 255 255 / .3);
