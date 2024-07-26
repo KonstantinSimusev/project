@@ -27,6 +27,7 @@ const createInput = (answer, answers, element) => {
     }
 
     element.disabled = false;
+    element.classList.remove('form__button_disabled');
   });
 
   return input;
@@ -56,6 +57,7 @@ export const createQuestion = (question, questions) => {
 
   inputs.forEach(input => {
     if (!input.checked) {
+      button.classList.add('form__button_disabled');
       button.disabled = true;
     }
   });
@@ -63,9 +65,13 @@ export const createQuestion = (question, questions) => {
   inputForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
 
-    userAnswers.join() === joinRandomAnswers
-      ? result.textContent = 'Праильный ответ'
-      : result.textContent = 'Ошибка';
+    if (userAnswers.join() === joinRandomAnswers) {
+      result.classList.add('question__result_right');
+      result.textContent = 'Правильный ответ'
+    } else {
+      result.classList.add('question__result_error');
+      result.textContent = 'Неправильный ответ';
+    }
 
     inputs.forEach(input => {
       input.checked = false;
@@ -73,7 +79,12 @@ export const createQuestion = (question, questions) => {
 
     userAnswers = [];
     button.disabled = true;
+
+    setTimeout(() => {
+      result.textContent = '';
+    }, 3000);
   });
+
 
   return card;
 };

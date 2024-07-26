@@ -1,52 +1,64 @@
 export const questions = [
   {
-    title: '1 Hello, World?',
+    title: 'Понятие нормирования труда',
     answers: [
       {
-        title: 'hello1',
+        title: 'Определение затрат времени, требующихся для выполнения той или иной работы в различных организационно – технических условиях',
         bool: true
       },
       {
-        title: 'no hello1',
+        title: 'Определение количества персонала для выполнения той или иной работы',
         bool: false
       },
       {
-        title: 'maybe1',
+        title: 'Определение количества оборудования, которое может обслуживать работник',
         bool: false
       }
     ]
   },
   {
-    title: '2 Hello, World?',
+    title: 'Какие бывают нормы труда?',
     answers: [
       {
-        title: 'hello2',
+        title: 'Нормы выработки, времени, обслуживания, численности, управляемости',
+        bool: true
+      },
+      {
+        title: 'Нормы выработки, времени',
         bool: false
       },
       {
-        title: 'no hello2',
-        bool: true
+        title: 'Нормы времени, численности',
+        bool: false
       }
     ]
   },
   {
-    title: '3 Hello, World?',
+    title: 'Показатели премирования подразделяются на',
     answers: [
       {
-        title: 'hello3',
-        bool: false
-      },
-      {
-        title: 'no hello3',
-        bool: false
-      },
-      {
-        title: 'maybe3',
+        title: 'Количественные',
         bool: true
       },
       {
-        title: 'no maybe3',
+        title: 'Качественные',
         bool: true
+      },
+      {
+        title: 'Экономические',
+        bool: true
+      },
+      {
+        title: 'Цеховые',
+        bool: false
+      },
+      {
+        title: 'Межцеховые',
+        bool: false
+      },
+      {
+        title: 'Основные',
+        bool: false
       }
     ]
   }

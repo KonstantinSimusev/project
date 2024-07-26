@@ -1,3 +1,16 @@
+@import url('./_disabled/form__button_disabled.css');
+
 .form__button {
+  color: white;
+  margin-block-start: 30px;
   background: transparent;
+  text-transform: uppercase;
+  padding-block: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  opacity: .5;
 }

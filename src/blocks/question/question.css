@@ -1,4 +1,7 @@
 @import url('./__title/qustion__title.css');
+@import url('./__result/question__result.css');
+@import url('./__text/question__text.css');
+@import url('./__item/question__item.css');
 
 .question {
   padding: 10px;
