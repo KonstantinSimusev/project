@@ -1,9 +1,9 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-moz-appearance:button;appearance:button;-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}*,:after,:before{box-sizing:border-box}blockquote,fieldset,h1,h2,h3,h4,li,ol,p,ul{margin:0;padding:0}ol,ul{list-style:none}
 @font-face{font-family:Roboto-Light;font-style:normal;font-weight:300;src:url(19a99746405e8730f34c.woff) format("woff")}@font-face{font-family:Oswald-Bold;font-style:normal;font-weight:800;src:url(8c294acde5159561e92d.woff2) format("woff2")}@font-face{font-family:OpenSans-Regular;font-style:normal;font-weight:400;src:url(d05f5eb593ca0ecea8ca.woff) format("woff")}
-.page{background:#000;color:#fff;letter-spacing:1.2px;margin:20px;opacity:.9}
+.page{background:#000;color:#fff;letter-spacing:1.2px;margin:20px;opacity:.9;position:relative}
 
 
-
+.content{position:relative;z-index:-3}
 .question__title{font-family:Oswald-Bold,sans-serif;letter-spacing:2px}
 .question__result_error{color:red;font-family:OpenSans-Regular,sans-serif;opacity:.9;text-transform:uppercase;transition:opacity .7s ease}
 .question__result_right{color:green;font-family:OpenSans-Regular,sans-serif;opacity:.9;text-transform:uppercase;transition:opacity .7s ease}
@@ -19,7 +19,17 @@
 .answers__list{display:grid;gap:15px}
 .input__text{font-family:Roboto-Light,sans-serif;font-size:18px;line-height:1.3}
 
-.footer__button{padding-inline:25px}
+.footer__button{margin-block-end:30px;padding-inline:25px}
 .footer{text-align:center}
+.button__test_open{padding-inline:25px}
 
+.popup__content{background-color:#fff;border-radius:10px;box-sizing:border-box;max-width:430px;min-height:181px;padding:34px 36px;position:relative;width:100%}
+.popup{align-items:center;background-color:rgba(0,0,0,.5);font-family:Inter,Arial,sans-serif;inset:0;justify-content:center;position:relative;z-index:10}
+.popup_is-animated{opacity:0;pointer-events:none;transition:visibility 0s .6s,opacity .6s;-webkit-user-select:none;-moz-user-select:none;user-select:none;visibility:hidden}
+.popup_is-opened{opacity:1;pointer-events:all;transition:visibility 0s,opacity .6s;visibility:visible}
+.animation__text{display:none;opacity:0;transition:opacity .1s ease;visibility:hidden}
+.animation_is-opened{display:flex;opacity:1;transition:opacity .1s ease;visibility:visible}
+.overlay{background-color:#000;inset:0;opacity:.9;position:fixed;text-align:center;z-index:-2}
+.info__text{margin-block-end:20px}
+.info{font-family:Roboto-Light,sans-serif;font-size:18px;margin-block-start:40px;position:relative;z-index:-1}
 
