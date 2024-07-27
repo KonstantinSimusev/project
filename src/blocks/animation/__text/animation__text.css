@@ -1,0 +1,6 @@
+.animation__text {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s ease;
+}

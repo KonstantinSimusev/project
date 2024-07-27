@@ -1,0 +1,9 @@
+@import url('./__text/info__text.css');
+
+.info {
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 18px;
+  position: relative;
+  z-index: -1;
+  margin-block-start: 40px;
+}

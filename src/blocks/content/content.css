@@ -1,2 +1,6 @@
 @import url('./__question/content__question.css');
 
+.content {
+  position: relative;
+  z-index: -3;
+}

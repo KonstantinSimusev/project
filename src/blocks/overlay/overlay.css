@@ -1,0 +1,8 @@
+.overlay {
+  text-align: center;
+  z-index: -2;
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: .9;
+}

@@ -6,15 +6,29 @@
     <title>Project</title>
   </head>
   <body class="page">
+    <div class="overlay">
+      <div class="info">
+        <p class="info__text">Привет!</p>
+        <p class="info__text">Команда разработчиков создала для тебя демо-версию приложения по тестированию руководителей.</p>
+        <p class="info__text">Приложение поможет эффективно подготовиться к аттестации.</p>
+        <p class="info__text">При перезагрузке страницы вопросы и ответы загружаются в рандомном порядке. Данная технология исключает использование зрительной памяти.</p>
+        <p class="info__text">Кнопка не активна, если не выбран вариант ответа.</p>
+        <p class="info__text">После нажатия на кнопку появляется результат ответа. На вопрос можно отвечать неограниченное количество раз.</p>
+        <p class="info__text">Удачи!</p>
+      </div>
+      <button class="form__button button__test_open">Начать тестирование...</button>
+    </div>
     <header class="header"></header>
     <main class="content">
       <section class="content__question">
         <ul class="questions__list"></ul>
       </section>
+      <footer class="footer">
+        <button type="button" class="footer__button form__button">
+          Показать вопросы ещё...
+        </button>
+      </footer>
     </main>
-    <footer class="footer">
-      <button type="button" class="footer__button form__button">Показать вопросы ещё...</button>
-    </footer>
 
     <template id="question-template">
       <li class="question__item">
@@ -40,7 +54,11 @@
     <template id="input-checkbox-template">
       <li class="answer__item">
         <label class="form__field">
-          <input name="checkbox" type="checkbox" class="input input__type_checkbox" />
+          <input
+            name="checkbox"
+            type="checkbox"
+            class="input input__type_checkbox"
+          />
           <span class="input__text"></span>
         </label>
       </li>

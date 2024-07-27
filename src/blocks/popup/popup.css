@@ -1,0 +1,12 @@
+@import url('./content/popup__content.css');
+
+.popup {
+  font-family: 'Inter', Arial, sans-serif;
+  /* display: none; */
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / .5);
+  position: relative;
+  inset: 0;
+  z-index: 10;
+}
