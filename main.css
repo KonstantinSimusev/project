@@ -31,5 +31,5 @@
 .animation_is-opened{display:flex;opacity:1;transition:opacity .1s ease;visibility:visible}
 .overlay{background-color:#000;inset:0;opacity:.9;position:fixed;text-align:center;z-index:-2}
 .info__text{margin-block-end:20px}
-.info{font-family:Roboto-Light,sans-serif;font-size:18px;margin-block-start:100px;padding:20px;position:relative;z-index:-1}
+.info{font-family:Roboto-Light,sans-serif;font-size:18px;margin-block-start:80px;padding:20px;position:relative;z-index:-1}
 
