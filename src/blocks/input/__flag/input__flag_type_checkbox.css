@@ -3,6 +3,7 @@
   margin-inline-end: 4px;
   bottom: -3px;
   display: inline-block;
+  transition: background-color .7s ease;
 }
 
 input[type='checkbox'] + span {

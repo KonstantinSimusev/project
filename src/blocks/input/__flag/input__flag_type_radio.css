@@ -4,6 +4,7 @@
   bottom: -3px;
   display: inline-block;
   border-radius: 50%;
+  transition: background-color .7s ease;
 }
 
 input[type='radio'] + span {
