@@ -6,5 +6,5 @@
   position: relative;
   z-index: -1;
   margin-block-start: 60px;
-  padding: 20px;
+  padding-inline: 30px;
 }
