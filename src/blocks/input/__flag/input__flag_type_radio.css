@@ -1,0 +1,27 @@
+.input__flag_type_radio {
+  position: relative;
+  margin-inline-end: 4px;
+  bottom: -3px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+input[type='radio'] + span {
+  inline-size: 20px;
+  block-size: 20px;
+  background-color: white;
+  opacity: .9;
+}
+
+input[type='radio']:checked + span {
+  position: relative;
+  bottom: -3px;
+  background-color: black;
+  border: 3px solid white;
+  opacity: .9;
+}
+
+input[type='radio']:focus-visible + span {
+  outline: none;
+}
+

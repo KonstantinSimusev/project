@@ -3,7 +3,7 @@ import { questions } from './questions';
 import { createQuestion } from './card';
 
 const questionsList = document.querySelector('.questions__list');
-const footerButton = document.querySelector('.footer__button');
+const priceButton = document.querySelector('.price__button');
 const testOpenButton = document.querySelector('.button__test_open');
 const overley = document.querySelector('.overlay');
 
@@ -14,8 +14,8 @@ randomQuestions.forEach(question => {
   questionsList.append(card);
 });
 
-footerButton.addEventListener('click', () => {
-  footerButton.textContent = 'Платный контент...';
+priceButton.addEventListener('click', () => {
+  priceButton.textContent = 'Платный контент...';
 });
 
 testOpenButton.addEventListener('click', () => {

@@ -1,2 +1,3 @@
 @import url('./__text/input__text.css');
-
+@import url('./__flag/input__flag_type_radio.css');
+@import url('./__flag/input__flag_type_checkbox.css');

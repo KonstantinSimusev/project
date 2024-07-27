@@ -1,0 +1,25 @@
+.input__flag_type_checkbox {
+  position: relative;
+  margin-inline-end: 4px;
+  bottom: -3px;
+  display: inline-block;
+}
+
+input[type='checkbox'] + span {
+  inline-size: 20px;
+  block-size: 20px;
+  background-color: white;
+  opacity: .9;
+}
+
+input[type='checkbox']:checked + span {
+  position: relative;
+  bottom: -3px;
+  background-color: black;
+  border: 3px solid white;
+  opacity: .9;
+}
+
+input[type='checkbox']:focus-visible + span {
+  outline: none;
+}

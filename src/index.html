@@ -9,25 +9,40 @@
     <div class="overlay">
       <div class="info">
         <p class="info__text">Привет!</p>
-        <p class="info__text">Команда разработчиков создала для тебя демо-версию приложения по тестированию руководителей.</p>
-        <p class="info__text">Приложение поможет эффективно подготовиться к аттестации.</p>
-        <p class="info__text">При перезагрузке страницы вопросы и ответы загружаются в рандомном порядке. Данная технология исключает использование зрительной памяти.</p>
-        <p class="info__text">Кнопка не активна, если не выбран вариант ответа.</p>
-        <p class="info__text">После нажатия на кнопку появляется результат ответа. На вопрос можно отвечать неограниченное количество раз.</p>
+        <p class="info__text">
+          Команда разработчиков создала для тебя демо-версию приложения по
+          тестированию руководителей.
+        </p>
+        <p class="info__text">
+          Приложение поможет эффективно подготовиться к аттестации.
+        </p>
+        <p class="info__text">
+          При перезагрузке страницы вопросы и ответы загружаются в рандомном
+          порядке. Данная технология исключает использование зрительной памяти.
+        </p>
+        <p class="info__text">
+          Кнопка не активна, если не выбран вариант ответа.
+        </p>
+        <p class="info__text">
+          После нажатия на кнопку появляется результат ответа. На вопрос можно
+          отвечать неограниченное количество раз.
+        </p>
         <p class="info__text">Удачи!</p>
       </div>
-      <button class="form__button button__test_open">Начать тестирование...</button>
+      <button class="form__button button__test_open">
+        Начать тестирование...
+      </button>
     </div>
     <header class="header"></header>
     <main class="content">
       <section class="content__question">
         <ul class="questions__list"></ul>
       </section>
-      <footer class="footer">
-        <button type="button" class="footer__button form__button">
+      <section class="price">
+        <button type="button" class="price__button form__button">
           Показать вопросы ещё...
         </button>
-      </footer>
+      </section>
     </main>
 
     <template id="question-template">
@@ -45,7 +60,12 @@
     <template id="input-radio-template">
       <li class="answer__item">
         <label class="form__field">
-          <input name="radio" type="radio" class="input input__type_radio" />
+          <input
+            name="radio"
+            type="radio"
+            class="input input__type_radio visually-hidden"
+          />
+          <span class="input__flag_type_radio"></span>
           <span class="input__text"></span>
         </label>
       </li>
@@ -57,8 +77,9 @@
           <input
             name="checkbox"
             type="checkbox"
-            class="input input__type_checkbox"
+            class="input input__type_checkbox visually-hidden"
           />
+          <span class="input__flag_type_checkbox"></span>
           <span class="input__text"></span>
         </label>
       </li>

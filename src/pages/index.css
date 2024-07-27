@@ -7,12 +7,13 @@
 @import url('../blocks/form/form.css');
 @import url('../blocks/answers/answers__list.css');
 @import url('../blocks/input/input.css');
-@import url('../blocks/footer/footer.css');
+
+@import url('../blocks/price/price.css');
+
 @import url('../blocks/button/button.css');
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/popup/_is-animated/popup_is-animated.css');
 @import url('../blocks/popup/_is-opened/popup_is-opened.css');
-@import url('../blocks/animation/__text/animation__text.css');
-@import url('../blocks/animation/_is-opened/animation_is-opened.css');
 @import url('../blocks/overlay/overlay.css');
 @import url('../blocks/info/info.css');
+@import url('../blocks/visually-hidden/visually-hidden.css');
